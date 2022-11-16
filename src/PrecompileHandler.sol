@@ -7,9 +7,6 @@ import "./Precompiles.sol";
 import "forge-std/Script.sol";
 
 contract PrecompileHandler is Precompiles, Script {
-    address private constant VM_ADDRESS =
-        address(bytes20(uint160(uint256(keccak256("hevm cheat code")))));
-
     // TODO: delete
     // Vm internal constant vm = Vm(VM_ADDRESS);
 
